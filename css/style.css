@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #ffffff;
+
+  font-family: 'Roboto', sans-serif;
+
+  height: 100vh;
+
+  /* Body Background gradient */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 5000% 1000%;
+  animation: gradient 15s ease infinite;
+
+  /* Body Background gradient */
+
+}
+
+/* Gradient animate */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+
+  }
+
+}
+/* olosko */
+@media (min-width: 400px) {
+ body {
+   font-size: 14px;
+ }
+}
+
+/* Gradient animate */
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* menu */
+nav.menu {
+  background: transparent;
+  position: fixed;
+  top: 0;
+}
+
+nav.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav.menu li {
+  list-style: none;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+nav.menu a{
+ display: block;
+}
+
+a {
+  background-color: #ffffff;
+  color: black;
+  text-decoration: none;
+  border: 1px white solid;
+  padding: 5px 30px;
+  border-radius: 3px;
+  transition: background-color .4s, color .4s;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.29);
+
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.055);
+  color: #ffffff;
+}
+
+/* menu */
+/* titulo e subtitle */
+
+h2.site-subtitle,
+h1.site-title {
+  text-align: center;
+}
+
+h1.site-title {
+  font-size: 25pt;
+}
+
+h2.site-subtitle {
+  font-size: 15pt;
+  font-style: italic;
+}
+
+/* titulo e subtitle */
+/* img figure*/
+figure.perfil{
+  border: 1px white solid;
+  border-radius: 20px;
+  padding: 50px;
+  background-color: whitesmoke;
+}
+figure.perfil img{
+  border: 1px rgb(0, 0, 0) solid;
+  filter: blur(1px);
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-radius: 150px;
+transition: border-radius .4s, filter .4s, border 1s;
+
+
+}
+
+figure.perfil img:hover{
+  border-radius: 10px;
+  filter: blur(0px);
+  border: 0px solid;
+
+}
+/* img */
+div.zueira {
+  display: flex;
+  justify-content: space-around;
+ 
+  
+}
+iframe.vid-zuei{
+  border-radius: 20px;
+  border: 1px white solid;
+  border-radius: 10px;
+  background-color: white;
+}
